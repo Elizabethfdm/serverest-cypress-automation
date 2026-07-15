@@ -199,9 +199,15 @@ A cada push ou pull request para a branch principal são executados automaticame
 
 ---
 
-## Evidência de execução
+# Evidências de execução
 
-![Execução da pipeline](docs/evidencias/github-actions-success.png)
+## Execução local
+
+![Execução local](docs/evidencias/testes-passando.png)
+
+## Pipeline GitHub Actions
+
+![Pipeline](docs/evidencias/github-actions-success.png)
 
 ---
 
