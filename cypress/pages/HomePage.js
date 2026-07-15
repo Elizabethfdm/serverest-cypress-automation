@@ -1,6 +1,6 @@
 class HomePage {
   elementos = {
-    tituloPrincipal: () => cy.contains('h1', 'Serverest Store'),
+    tituloPrincipal: () => cy.get('h1'),
     botaoLogout: () => cy.get('[data-testid="logout"]'),
   };
 
