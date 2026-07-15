@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "cy:open": "cypress open",
+  "test": "cypress run",
+  "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+  "test:frontend": "cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\"",
+  "test:chrome": "cypress run --browser chrome"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
