@@ -1,18 +1,18 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://front.serverest.dev",
+    baseUrl: 'https://front.serverest.dev',
 
     env: {
-      apiUrl: "https://serverest.dev",
+      apiUrl: 'https://serverest.dev',
     },
 
-    specPattern: "cypress/e2e/**/*.cy.js",
-    supportFile: "cypress/support/e2e.js",
+    specPattern: 'cypress/e2e/**/*.cy.js',
+    supportFile: 'cypress/support/e2e.js',
 
-    screenshotsFolder: "cypress/screenshots",
-    videosFolder: "cypress/videos",
+    screenshotsFolder: 'cypress/screenshots',
+    videosFolder: 'cypress/videos',
 
     video: true,
     screenshotOnRunFailure: true,

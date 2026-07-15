@@ -1,6 +1,7 @@
 const js = require('@eslint/js');
 const cypress = require('eslint-plugin-cypress');
 const prettier = require('eslint-config-prettier');
+const globals = require('globals');
 
 module.exports = [
   {
@@ -16,22 +17,17 @@ module.exports = [
   js.configs.recommended,
 
   {
-    files: ['cypress/**/*.js', 'cypress.config.js'],
+    files: ['cypress/**/*.js'],
 
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
 
       globals: {
+        ...globals.browser,
+        ...globals.mocha,
         Cypress: 'readonly',
         cy: 'readonly',
-        describe: 'readonly',
-        context: 'readonly',
-        it: 'readonly',
-        before: 'readonly',
-        beforeEach: 'readonly',
-        after: 'readonly',
-        afterEach: 'readonly',
         expect: 'readonly',
       },
     },
@@ -53,6 +49,19 @@ module.exports = [
 
       'cypress/no-unnecessary-waiting': 'error',
       'cypress/unsafe-to-chain-command': 'off',
+    },
+  },
+
+  {
+    files: ['cypress.config.js', 'eslint.config.js'],
+
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'commonjs',
+
+      globals: {
+        ...globals.node,
+      },
     },
   },
 

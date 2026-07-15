@@ -24,9 +24,7 @@
     "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-cypress": "^6.4.3",
-    "mochawesome": "^7.1.4",
-    "mochawesome-merge": "^5.1.1",
-    "mochawesome-report-generator": "^6.3.2",
+    "globals": "^17.7.0",
     "prettier": "^3.9.5"
   }
 }
