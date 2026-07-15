@@ -1,4 +1,8 @@
 # Automação de Testes - ServeRest
+![Cypress](https://img.shields.io/badge/Cypress-15+-17202C?logo=cypress)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript)
+![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?logo=githubactions)
 
 Projeto desenvolvido para o desafio técnico de QA utilizando **Cypress** e **JavaScript**, contemplando testes automatizados de **Frontend** e **API** da aplicação ServeRest.
 
@@ -19,15 +23,15 @@ Automatizar cenários E2E e de API utilizando boas práticas de desenvolvimento,
 
 # Tecnologias utilizadas
 
-- JavaScript
-- Cypress
-- Node.js
-- Faker
-- ESLint
-- Prettier
-- Git
-- GitHub
-- GitHub Actions
+| Tecnologia | Finalidade |
+|------------|------------|
+| Cypress | Automação de testes E2E e API |
+| JavaScript | Linguagem utilizada |
+| Node.js | Ambiente de execução |
+| Faker | Geração de dados dinâmicos |
+| ESLint | Padronização do código |
+| Prettier | Formatação automática |
+| GitHub Actions | Integração contínua |
 
 ---
 
@@ -86,7 +90,18 @@ Automatizar cenários E2E e de API utilizando boas práticas de desenvolvimento,
 - Separação por responsabilidade
 - ESLint
 - Prettier
-- GitHub Actions
+- Integração contínua
+
+---
+
+## Diferenciais do projeto
+
+- Dados gerados dinamicamente utilizando Faker.
+- Limpeza automática da massa de dados criada durante os testes.
+- Separação entre testes de API e Frontend.
+- Estrutura baseada em Page Objects, Services e Factories.
+- Pipeline automatizada com GitHub Actions.
+- Código padronizado com ESLint e Prettier.
 
 ---
 
@@ -180,6 +195,12 @@ A cada push ou pull request para a branch principal são executados automaticame
 - validação da formatação;
 - análise estática do código;
 - execução dos testes automatizados.
+
+---
+
+## Evidência de execução
+
+![Execução dos testes](imagem.png)
 
 ---
 
