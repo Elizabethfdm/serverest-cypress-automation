@@ -12,9 +12,7 @@ describe('API de login', () => {
     if (usuarioId) {
       excluirUsuario(usuarioId).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.message).to.eq(
-          'Registro excluído com sucesso',
-        );
+        expect(response.body.message).to.eq('Registro excluído com sucesso');
       });
 
       usuarioId = undefined;
@@ -31,12 +29,9 @@ describe('API de login', () => {
 
       realizarLogin(usuario).then((responseLogin) => {
         expect(responseLogin.status).to.eq(200);
-        expect(responseLogin.body.message).to.eq(
-          'Login realizado com sucesso',
-        );
-        expect(responseLogin.body.authorization)
-          .to.be.a('string')
-          .and.not.be.empty;
+        expect(responseLogin.body.message).to.eq('Login realizado com sucesso');
+        expect(responseLogin.body.authorization).to.be.a('string').and.not.be
+          .empty;
       });
     });
   });

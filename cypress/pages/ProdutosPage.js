@@ -3,8 +3,7 @@ class ProdutosPage {
     campoPesquisa: () => cy.get('[data-testid="pesquisar"]'),
     botaoPesquisar: () => cy.get('[data-testid="botaoPesquisar"]'),
     cardsProdutos: () => cy.get('.card'),
-    botaoAdicionarLista: () =>
-      cy.get('[data-testid="adicionarNaLista"]'),
+    botaoAdicionarLista: () => cy.get('[data-testid="adicionarNaLista"]'),
   };
 
   pesquisarProduto(nomeProduto) {

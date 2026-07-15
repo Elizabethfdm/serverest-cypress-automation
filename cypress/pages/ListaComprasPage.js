@@ -1,8 +1,7 @@
 class ListaComprasPage {
   elementos = {
     tituloPagina: () => cy.contains('h1', 'Lista de Compras'),
-    botaoLimparLista: () =>
-      cy.get('[data-testid="limparLista"]'),
+    botaoLimparLista: () => cy.get('[data-testid="limparLista"]'),
   };
 
   validarPagina() {

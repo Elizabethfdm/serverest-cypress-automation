@@ -26,9 +26,7 @@ describe('Login pelo frontend', () => {
     if (usuarioId) {
       excluirUsuario(usuarioId).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.message).to.eq(
-          'Registro excluído com sucesso',
-        );
+        expect(response.body.message).to.eq('Registro excluído com sucesso');
       });
 
       usuarioId = undefined;
@@ -38,10 +36,7 @@ describe('Login pelo frontend', () => {
   it('deve realizar login com sucesso', () => {
     loginPage.acessar();
 
-    loginPage.realizarLogin(
-      usuario.email,
-      usuario.password,
-    );
+    loginPage.realizarLogin(usuario.email, usuario.password);
 
     homePage.validarPaginaInicial();
   });

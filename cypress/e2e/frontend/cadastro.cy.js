@@ -15,9 +15,7 @@ describe('Cadastro de usuário pelo frontend', () => {
     if (usuarioId) {
       excluirUsuario(usuarioId).then((response) => {
         expect(response.status).to.eq(200);
-        expect(response.body.message).to.eq(
-          'Registro excluído com sucesso',
-        );
+        expect(response.body.message).to.eq('Registro excluído com sucesso');
       });
 
       usuarioId = undefined;
@@ -52,24 +50,20 @@ describe('Cadastro de usuário pelo frontend', () => {
         administrador: usuario.administrador,
       });
 
-      expect(usuarioCadastrado._id)
-        .to.be.a('string')
-        .and.not.be.empty;
+      expect(usuarioCadastrado._id).to.be.a('string').and.not.be.empty;
 
       usuarioId = usuarioCadastrado._id;
 
-      buscarUsuarioPorId(usuarioId).then(
-        (responseUsuario) => {
-          expect(responseUsuario.status).to.eq(200);
+      buscarUsuarioPorId(usuarioId).then((responseUsuario) => {
+        expect(responseUsuario.status).to.eq(200);
 
-          expect(responseUsuario.body).to.deep.include({
-            nome: usuario.nome,
-            email: usuario.email,
-            administrador: usuario.administrador,
-            _id: usuarioId,
-          });
-        },
-      );
+        expect(responseUsuario.body).to.deep.include({
+          nome: usuario.nome,
+          email: usuario.email,
+          administrador: usuario.administrador,
+          _id: usuarioId,
+        });
+      });
     });
   });
 });

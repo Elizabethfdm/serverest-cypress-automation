@@ -1,3 +1,3 @@
 export const environment = {
-    apiUrl: Cypress.env('apiUrl')
-}
+  apiUrl: Cypress.env('apiUrl'),
+};

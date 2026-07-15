@@ -4,10 +4,8 @@ class CadastroPage {
     campoNome: () => cy.get('[data-testid="nome"]'),
     campoEmail: () => cy.get('[data-testid="email"]'),
     campoSenha: () => cy.get('[data-testid="password"]'),
-    checkboxAdministrador: () =>
-      cy.get('[data-testid="checkbox"]'),
-    botaoCadastrar: () =>
-      cy.get('[data-testid="cadastrar"]'),
+    checkboxAdministrador: () => cy.get('[data-testid="checkbox"]'),
+    botaoCadastrar: () => cy.get('[data-testid="cadastrar"]'),
   };
 
   acessar() {
