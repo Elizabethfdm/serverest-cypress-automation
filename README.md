@@ -1,4 +1,5 @@
 # Automação de Testes - ServeRest
+
 ![Cypress](https://img.shields.io/badge/Cypress-15+-17202C?logo=cypress)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript)
 ![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js)
@@ -23,15 +24,15 @@ Automatizar cenários E2E e de API utilizando boas práticas de desenvolvimento,
 
 # Tecnologias utilizadas
 
-| Tecnologia | Finalidade |
-|------------|------------|
-| Cypress | Automação de testes E2E e API |
-| JavaScript | Linguagem utilizada |
-| Node.js | Ambiente de execução |
-| Faker | Geração de dados dinâmicos |
-| ESLint | Padronização do código |
-| Prettier | Formatação automática |
-| GitHub Actions | Integração contínua |
+| Tecnologia     | Finalidade                    |
+| -------------- | ----------------------------- |
+| Cypress        | Automação de testes E2E e API |
+| JavaScript     | Linguagem utilizada           |
+| Node.js        | Ambiente de execução          |
+| Faker          | Geração de dados dinâmicos    |
+| ESLint         | Padronização do código        |
+| Prettier       | Formatação automática         |
+| GitHub Actions | Integração contínua           |
 
 ---
 
@@ -200,7 +201,7 @@ A cada push ou pull request para a branch principal são executados automaticame
 
 ## Evidência de execução
 
-![Execução dos testes](imagem.png)
+![Execução bem-sucedida no GitHub Actions](docs/evidencias/execucao-pipeline.png)
 
 ---
 
